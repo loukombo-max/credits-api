@@ -1,0 +1,30 @@
+{
+  "name": "credits-api",
+  "version": "1.0.0",
+  "description": "Credits management API for SaaS platform - handles credit checking, usage, and transactions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm rebuild sqlite3"
+  },
+  "keywords": ["credits", "saas", "billing", "api", "sqlite"],
+  "author": "loukombo-max",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
